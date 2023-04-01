@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+</head>
+
+<body>
+  <h1>Регистрация</h1>
+
+  <div>
+    <ul>
+      <li><a href="../index.html">Главная страница</a></li>
+      <li><a href="articles.html">Статьи</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+      <li><a href="gallery.html">Галерея</a></li>
+      <li><a href="page-nav.html">Навигация</a></li>
+      <li><a href="registration.html">Регистрация</a></li>
+    </ul>
+  </div>
+
+  <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+
+    <fieldset>
+
+      <legend>#1 Основная группа</legend>
+
+      <div>
+        <label for="fam">Фамилия</label>
+        <input id="fam" name="lgn" placeholder="Введите фамилию" type="text" value="Фамилия">
+      </div>
+
+      <div>
+        <label for="name">Имя</label>
+        <input id="name" name="lgn" placeholder="Введите имя" type="text" value="Имя">
+      </div>
+
+      <div>
+        <label for="soname">Отчество</label>
+        <input id="soname" name="lgn" placeholder="Введите отчество" type="text" value="Отчество">
+      </div>
+
+      <div>
+        <label for="file">Фотография</label>
+        <input id="file" name="file" type="file">
+      </div>
+
+      <div>
+        <label for="email">email</label>
+        <input id="email" name="email" placeholder="Введите email" type="text">
+      </div>
+
+      <div>
+        <label for="password">Пароль</label>
+        <input id="password" maxlength="12" minlength="3" name="pass" placeholder="Введите пароль" type="password">
+      </div>
+
+      <div>
+        <label for="site">Адрес сайта</label>
+        <input id="site" name="site" placeholder="site" type="url" value="https://mysite.name">
+      </div>
+
+      <fieldset>
+
+        <legend>#2 Выбрать пол</legend>
+
+        <p>Укажите пол</p>
+
+        <div>
+          <input id="gender-male" name="gender" type="radio" value="gender-male">
+          <label for="gender-male">Мужской</label>
+        </div>
+
+        <div>
+          <input id="gender-female" name="gender" type="radio" value="gender-female">
+          <label for="gender-female">Женский</label>
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+
+        <legend>#3 Открывающийся список</legend>
+
+        <div>
+          <label for="list">Дата рождения</label>
+          <select id="list" name="list">
+            <option disabled selected value="">Виберите год</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2026</option>
+          </select>
+        </div>
+
+      </fieldset>
+
+    </fieldset>
+
+    <fieldset>
+
+      <legend>#4 Множественный выбор</legend>
+
+      <p>Выберите предпочитаемаю вами кухню</p>
+
+      <div>
+        <input checked id="ua" name="kit" type="checkbox" value="ua">
+        <label for="ua">Украинская</label>
+      </div>
+
+      <div>
+        <input checked id="gr" name="kit" type="checkbox" value="gr">
+        <label for="gr">Грузинская</label>
+      </div>
+
+      <div>
+        <input checked id="it" name="kit" type="checkbox" value="it">
+        <label for="it">Итальянская</label>
+      </div>
+
+      <div>
+        <input checked id="md" name="kit" type="checkbox" value="md">
+        <label for="md">Молдавская</label>
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+
+      <legend>#5 Многострочный тескт</legend>
+
+      <div>
+        <label for="txt">Напишите о себе</label>
+        <textarea id="txt" name="txt" cols="30" rows="10"></textarea>
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+
+      <legend>#6 Управление формой</legend>
+
+      <div>
+        <input type="submit" value="Регистрация">
+        <input type="reset" value="Сбросить">
+      </div>
+
+    </fieldset>
+
+  </form>
+
+  <footer>
+    <p>&copy; студент Кашкаров Ярослав</p>
+  </footer>
+
+</body>
+
+</html>
